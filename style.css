@@ -16,11 +16,13 @@ body{
     align-items: center;
     height: 768px;
     justify-content: center;
+    
 }
 
 .card{
     background-color: hsl(216, 50%, 16%);
     max-width: 365px;
+    width: 340px;
     height: fit-content;
     border-radius: 20px;
 }
@@ -40,15 +42,33 @@ body{
 
 /* Image Section */
 
-.equilibrium img{
-    width: 340px;
+/* Equilibrium icon */
+
+.equilibrium{
+    position: relative;
+}
+
+.image-equilibrium img{
+    width: 330px;
     height: auto;
-    padding: 15px 8px;
+    padding: 20px 15px;
     border-radius: 25px;
     overflow: hidden;
 }
+ 
+/* Eye icon */
 
+.eye{
+    position: absolute;
+    bottom: 14px;
+    left: 15px;
+    opacity: 0;
+}
 
+.eye-image{
+    padding: 130px ;
+    
+}
 
 /* paragraph Section */
 
@@ -127,5 +147,7 @@ p{
     color: hsl(178, 100%, 50%);
 }
 
-
-
+.eye:hover{
+    background-color: hsla(178, 100%, 50%,50%);
+    opacity: 100%;
+}
